@@ -13,7 +13,7 @@
      * @param {ElementFinder} element on the web page
      * @return {Promise} true if found
      */
-     this.waitforElement = async function( element ) {
+     this.waitForElement = async function ( element ) {
          return await browser.wait(this.EC.visibilityOf( element ), 4000);
      };
 
@@ -41,7 +41,7 @@
      * @return {Promise} <void>
      */
     this.type = async function( element, text) {
-        await this.awaitForElement( element );
+        await this.waitForElement( element );
         return await element.sendKeys( text );
     }
 

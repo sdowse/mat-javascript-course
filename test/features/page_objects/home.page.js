@@ -8,7 +8,6 @@ var HomePage = function(){
  * Add product button
  */
 this.addProduct = $('.mat-flat-button','.mat-primary');
-};
 
 /**
  * Used to create the locator for the Product element (we don't know what our 
@@ -16,7 +15,11 @@ this.addProduct = $('.mat-flat-button','.mat-primary');
  * @param {object} product
  * @returns {ElementFinder} element
  */
-this.productInTable = function( product ){
-    return Element(by.cssContainingText(' .mat-cell', product.name));
+this.productInTable = function ( product ){
+    return element(by.cssContainingText('.mat-cell', product.name));
 }
+
+
+};
+
 module.exports = new HomePage();
