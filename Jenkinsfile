@@ -20,7 +20,7 @@ pipeline {
             steps {
                 bat "START /B npx webdriver-manager-start && npm test"
             }
-        post {
+        post {  
             always {
                 publishHTML([
                     allowMissing            : false,
