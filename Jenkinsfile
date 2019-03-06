@@ -18,8 +18,9 @@ pipeline {
 
         stage('Start Selenium Server and Run Acceptance Tests') {
             steps {
-                bat "START /B npx webdriver-manager-start && npm test"
+                bat "START /B npx webdriver-manager start && npm test"
             }
+
         post {  
             always {
                 publishHTML([
