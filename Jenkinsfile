@@ -29,7 +29,7 @@ pipeline {
                     alwaysLinkToLastBuild   : false,
                     keepAll                 : false,
                     reportDir               : '.tmp/report',
-                    reportFiles             : '.index.html',
+                    reportFiles             : 'index.html',
                     reportName              : 'BDD Report',
                     reportTitles            : ''])
             }
