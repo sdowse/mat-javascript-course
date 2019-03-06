@@ -24,7 +24,7 @@ pipeline {
             always {
                 publishHTML([
                     allowMissing            : false,
-                    alwaysLinktoLastBuild   : false,
+                    alwaysLinkToLastBuild   : false,
                     keepAll                 : false,
                     reportDir               : '.tmp/report',
                     reportFiles             : '.index.html',
