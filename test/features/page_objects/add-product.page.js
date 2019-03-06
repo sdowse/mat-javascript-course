@@ -9,8 +9,8 @@
  * Elements on the page
  * */
     this.productName =$('#mat-input-0');
-    this.product.Description = $('#mat-input-1');
-    this.product.Price =$('#mat-input-2');
-    this.submit.Button =$('[type=submit]');
+    this.productDescription = $('#mat-input-1');
+    this.productPrice =$('#mat-input-2');
+    this.submitButton =$('[type=submit]');
 };
 module.exports = new AddProductPage();

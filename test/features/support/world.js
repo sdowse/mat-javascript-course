@@ -1,7 +1,5 @@
 'use strict';
 
-import { browser } from "protractor";
-
 var World = function World() {
 
     // empty test data for our product
