@@ -4,9 +4,9 @@ exports.config = {
     seleniumAddress: 'http://localhost:4444/wd/hub',
     baseUrl: 'http://localhost:8080/',
 
-    capabilities: {
-        'browserName': 'chrome'
-      },
+   capabilities: {
+    'browserName': 'chrome'
+    },
 
     //   multiCapabilities: [{
     //     'browserName': 'firefox'
@@ -14,13 +14,13 @@ exports.config = {
     //     'browserName': 'chrome'
     //   }]  
 
-    // capabilities: {
+    //capabilities: {
     //     browserName: 'chrome',
       
-    //     chromeOptions: {
-    //        args: [ "--headless", "--disable-gpu", "--window-size=800,600" ]
-    //      }
-    //   }
+    //    chromeOptions: {
+     //       args: [ "--headless", "--disable-gpu", "--window-size=800,600" ]
+     //     }
+   //    }
 
     // run a group of tests
     specs: ['products/*.spec.js'],
